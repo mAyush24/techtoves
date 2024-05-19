@@ -4,7 +4,7 @@
     font-family: Arial;
 }
 
-.container {
+.containerh {
     width: 100%;
     height: 100vh;
     background-image: url(src/assets/r.jpg); 
@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-.navbar {
+.navbarh {
     height: 12%;
     display: flex;
     align-items: center;
@@ -24,85 +24,86 @@
     top: 0;
 }
 
-.logo {
+.logoh {
     width: 50px;
     cursor: pointer;
 
 }
 
-.menu-icon {
+.menu-iconh {
     width: 30px;
     cursor: pointer;
 
 }
 
-nav {
+.listh {
     flex: 1;
     text-align: right;
 }
 
-nav ul li {
+.listh ul li {
     list-style: none;
     display: inline-block;
     margin-left: 60px;
 }
 
-nav ul li a {
+.listh ul li a {
     text-decoration: none;
     color: black;
     font-size: 13px;
 }
 
-.list{
+.listh{
     margin: 0 40px;
 }
-.list a{
+.listh a{
     font-size: 15px;
     font-weight: 600;
     color: rgb(79, 72, 3);
 }
-.list a:hover{
+.listh a:hover{
     color: rgb(127, 123, 123);
 }
-.search-bar {
+.search-barh {
     float: right;
     padding: 4px;
     background: rgb(226, 226, 226);
     border: 0;
     outline: 0;
     border-radius: 20px;
+    display: flex;
 }
-.search-bar input, .btn {
+.search-barh input, .btnh {
     padding: 10px;
     border: 0;
     outline: 0;
     border-radius: 20px;
     background-color: rgb(226, 226, 226);
 }
-.btn:hover{
+.btnh:hover{
     cursor: pointer;
     background-color: #cac8c8;
 }
-.btn{
+.btnh{
     text-decoration: none;
     color: black;
     transition: .2s ease;
 }
-.login{
+.loginh{
     margin: 0 10px;
     display: flex;
     gap: 5px;
     
 }
 
-.row {
+.rowh {
     display: flex;
     height: 88%;
     align-items: center;
     gap: 5rem;
 }
 
-.col {
+.colh {
     flex-basis: 50%;
 }
 
@@ -117,7 +118,7 @@ p {
     font-size: 15px;
 }
 
-.button {
+.buttonh {
     width: 180px;
     color: #000;
     font-size: 12px;
@@ -129,7 +130,7 @@ p {
     margin-top: 30px;
 }
 
-.card1 {
+.card1h {
     width: 200px;
     height: 230px;
     display: inline-block;
@@ -143,7 +144,7 @@ p {
     background-size: cover;
 }
 
-.card2 {
+.card2h {
     width: 200px;
     height: 230px;
     display: inline-block;
@@ -157,10 +158,10 @@ p {
     background-size: cover;
 }
 
-.card1 h5, .card2 h5{
+.card1h h5, .card2h h5{
     font-size: 25px;
 }
 
-.card1 p, .card2 p{
+.card1h p, .card2h p{
     font-size: 15px;
 }
