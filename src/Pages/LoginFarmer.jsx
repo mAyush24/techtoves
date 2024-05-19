@@ -1,27 +1,29 @@
 import React, { useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
-import { auth } from './firebase' // Adjust the path if necessary
+import { Link, useNavigate } from 'react-router-dom'
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import './LoginFarmer.css'
 
 function LoginFarmer() {
-  const history = useHistory()
+  const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = React.useState('')
   const [error, setError] = React.useState('')
+  const auth = getAuth();
 
   const handleLogin = async (e) => {
     e.preventDefault()
     setError('')
 
     try {
-      await auth.signInWithEmailAndPassword(email, password)
+      await signInWithEmailAndPassword(auth, email, password)
       console.log('Login successful!') // Log success message
       // Handle successful login (e.g., redirect to a different page)
-      history.push('/dashboard')
     } catch (error) {
       setError('Failed to sign in. Please try again.')
       console.error('Login error', error)
     }
   }
+
 
   return (
     <>
