@@ -8,7 +8,7 @@ function LoginFarmer() {
             <div className="login-containerlf">
                 <h2>Login </h2>
                 <form>
-                    <input type="tel" placeholder="Phone Number" required="" />
+                    <input type="email" name="email" id="email" placeholder='Email' required='' />
                     <input type="password" placeholder="Password" required="" />
                     <button type="submit">Login</button>
                 </form>

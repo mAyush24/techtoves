@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
+import Footer from '../components/Footer'
 function Home() {
     return (
-        <>
-
+        <div className="hidden">
             <div className="navbarh">
                 {/* <img src="src/assets/download.jpeg.jpg" className="logo" /> */}
                 <h2 className='logoh'>Techtoves</h2>
@@ -47,21 +47,18 @@ function Home() {
                     </div>
                     <div className="colh">
                         <div className="card1h">
-                            <h5>FARMERS</h5>
-                            <p>for farmers</p>
+                            {/* <h5>FARMERS</h5>
+                            <p>for farmers</p> */}
                         </div>
                         <div className="card2h">
-                            <h5>FARMERS</h5>
-                            <p>for farmers</p>
-                        </div>
-                        <div className="card2h">
-                            <h5>FARMERS</h5>
-                            <p>for farmers</p>
+                            {/* <h5>FARMERS</h5>
+                            <p>for farmers</p> */}
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+            {/* <Footer/> */}
+        </div>
 
     )
 }

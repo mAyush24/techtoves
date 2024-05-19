@@ -5,6 +5,7 @@ import './App.css'
 import Signup from './Pages/Signup';
 import Signupfarmer from './Pages/Signupfarmer';
 import LoginFarmer from './Pages/LoginFarmer';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/signup/buyer" element={<Signup/>} />
           <Route exact path="/signup/farmer" element={<Signupfarmer/>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )
