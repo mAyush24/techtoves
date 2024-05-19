@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Purchase Page</title>
+    <link rel="stylesheet" href="buisness.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <button id="home-btn">Home</button>
+            <button id="logout-btn">Logout</button>
+        </header>
+        <main class="main">
+            <section class="crop-selection">
+                <h2>Select Crop</h2>
+                <select id="crop-select">
+                    <option value="none">Select a crop</option>
+                    <option value="crop1">Crop 1</option>
+                    <option value="crop2">Crop 2</option>
+                    <option value="crop3">Crop 3</option>
+                </select>
+            </section>
+            <section class="quantity-selection" hidden>
+                <h2>Quantity(IN TONN)</h2>
+                <div class="quantity-control">
+                    <button id="quantity-minus" hidden>-</button>
+                    <input type="number" id="quantity" value="1" min="1" disabled>
+                    <button id="quantity-plus">+</button>
+                </div>
+                <p id="price">Price: ₹200</p>
+                <button id="buy-now-btn">Buy Now</button>
+            </section>
+        </main>
+    </div>
+    <script>
+        const cropSelect = document.getElementById('crop-select');
+        const quantityInput = document.getElementById('quantity');
+        const quantityPlusBtn = document.getElementById('quantity-plus');
+        const quantityMinusBtn = document.getElementById('quantity-minus');
+        const priceDisplay = document.getElementById('price');
+        const quantitySelection = document.querySelector('.quantity-selection');
+        const buyNowBtn = document.getElementById('buy-now-btn');
+        const msp = 200; 
+
+        cropSelect.addEventListener('change', function() {
+            const selectedCrop = this.value;
+            if (selectedCrop !== 'none') {
+                quantitySelection.hidden = false;
+                quantityInput.disabled = false;
+            } else {
+                quantitySelection.hidden = true;
+                quantityInput.disabled = true;
+                priceDisplay.textContent = 'Price: ₹200';
+            }
+        });
+
+        quantityPlusBtn.addEventListener('click', function() {
+            let currentQuantity = parseInt(quantityInput.value);
+            currentQuantity++;
+            quantityInput.value = currentQuantity;
+            updatePrice();
+        });
+
+        quantityMinusBtn.addEventListener('click', function() {
+            let currentQuantity = parseInt(quantityInput.value);
+            if (currentQuantity > 1) {
+                currentQuantity--;
+                quantityInput.value = currentQuantity;
+                updatePrice();
+            }
+        });
+
+        function updatePrice() {
+            const currentQuantity = parseInt(quantityInput.value);
+            const totalPrice = currentQuantity * msp;
+            priceDisplay.textContent = `Price: ₹${totalPrice.toFixed(2)}`;
+            if (currentQuantity > 300) {
+                quantityMinusBtn.hidden = false;
+            } else {
+                quantityMinusBtn.hidden = true;
+            }
+        }
+
+        buyNowBtn.addEventListener('click', function() {
+            alert(`You have bought ${quantityInput.value} units of ${cropSelect.options[cropSelect.selectedIndex].text} for ₹${(quantityInput.value * msp).toFixed(2)}`);
+        });
+    </script>
+</body>
+</html>
