@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import './LoginFarmer.css'
 
-function LoginFarmer() {
+function Login() {
 
   const navigate = useNavigate()
   const [email, setEmail] = useState('')
@@ -46,11 +46,11 @@ function LoginFarmer() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <button type="submit">Login</button>
+          <Link style={{textDecoration:'none', color:'white', backgroundColor:'green', padding:'4px 10px'}} to='/dashboard' type="submit">Login</Link>
         </form>
         {error && <p className="error">{error}</p>}
         <div className="linkslf">
-          <Link to='/login/farmer'>For Farmer</Link> <br />
+          <Link to='/login/'>For Company</Link> <br />
           <a href="#">Forgot Password?</a>
           <p>
             Don't have an account? <Link to="/signup/farmer">Sign up here</Link>
@@ -61,4 +61,4 @@ function LoginFarmer() {
   )
 }
 
-export default LoginFarmer
+export default Login
