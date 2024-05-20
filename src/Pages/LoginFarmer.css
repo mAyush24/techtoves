@@ -1,18 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
+}
+
+.center{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
 }
-
 .login-containerlf {
+    margin: 0;
     background-color: #eef8dd;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(113, 247, 111, 0.9);
+    box-shadow: 0 0 10px rgba(165, 168, 165, 0.9);
     width: 300px;
     text-align: center;
 }
@@ -22,7 +24,7 @@ body {
     color: #333;
 }
 
-.login-containerlf input[type="tel"],
+.login-containerlf input[type="email"],
 .login-containerlf input[type="password"] {
     width: 90%;
     padding: 10px;
@@ -46,16 +48,27 @@ body {
     background-color: #218838;
 }
 
-.login-containerlf .links {
+.login-containerlf .linkslf {
     margin-top: 20px;
     text-align: center;
 }
 
-.login-containerlf .links a {
+.login-containerlf .linkslf a {
     color: #007bff;
     text-decoration: none;
 }
+.login-containerlf .linkslf p{
+    color: black;
+}
 
-.login-containerlf .links a:hover {
+.login-containerlf .linkslf a:hover {
     text-decoration: underline;
+}
+
+.black{
+    text-decoration: none;
+    color: white;
+    background-color: #28a745;
+    padding: 4px 10px;
+
 }

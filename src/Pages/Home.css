@@ -6,7 +6,7 @@
 
 .containerh {
     width: 100%;
-    height: 100vh;
+    height: 94vh;
     background-image: url(src/assets/r.jpg); 
     background-position: center;
     background-size: cover;
@@ -14,11 +14,13 @@
     box-sizing: border-box;
 }
 
+
 .navbarh {
     height: 12%;
     display: flex;
     align-items: center;
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgba(139, 197, 206, 0.2);
     padding: 5px 20px;
     position: sticky;
     top: 0;
@@ -67,7 +69,8 @@
 .search-barh {
     float: right;
     padding: 4px;
-    background: rgb(226, 226, 226);
+    background: white;
+    /* background: rgb(226, 226, 226); */
     border: 0;
     outline: 0;
     border-radius: 20px;
@@ -75,10 +78,11 @@
 }
 .search-barh input, .btnh {
     padding: 10px;
-    border: 0;
-    outline: 0;
+    border: 0 !important;
+    outline: 0 !important;
     border-radius: 20px;
-    background-color: rgb(226, 226, 226);
+    /* background-color: rgb(226, 226, 226); */
+    background-color: white;
 }
 .btnh:hover{
     cursor: pointer;
@@ -142,6 +146,7 @@ p {
     background-image: url(src/assets/f.jpg);
     background-position: center;
     background-size: cover;
+    box-shadow: 4px 7px 16px 5px rgba(0,0,0,0.1);
 }
 
 .card2h {
@@ -156,6 +161,7 @@ p {
     background-image: url(src/assets/Indian-Farmer.jpg);
     background-position: center;
     background-size: cover;
+    box-shadow: 4px 7px 16px 5px rgba(0,0,0,0.1);
 }
 
 .card1h h5, .card2h h5{

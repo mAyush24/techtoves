@@ -4,11 +4,31 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import './LoginFarmer.css'
 
 function LoginFarmer() {
+
   const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = React.useState('')
   const [error, setError] = React.useState('')
   const auth = getAuth();
+
+    return (
+        <div className='center'>
+            <div className="login-containerlf">
+                <h2>Login </h2>
+                <form>
+                    <input type="email" name="email" id="email" placeholder='Email' required='' />
+                    <input type="password" placeholder="Password" required="" />
+                    <Link className='black' to='/dashboard'>Login</Link>
+                </form>
+                <div className="linkslf">
+                    <a href="#">Forgot Password?</a>
+                    <p>
+                        Don't have an account? <Link to="/signup/farmer">Sign up here</Link>
+                    </p>
+                </div>
+            </div>
+        </div>
+
 
   const handleLogin = async (e) => {
     e.preventDefault()
