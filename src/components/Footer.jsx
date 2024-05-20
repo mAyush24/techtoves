@@ -72,28 +72,13 @@ s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.
                     </svg>
                 </div>
                 <section className='section'>
-                    <ul className="socials">
-                        <li>
-                            <a className="fa-brands fa-x-twitter" />
-                        </li>
-                        <li>
-                            <a className="fa-brands fa-facebook" />
-                        </li>
-                        <li>
-                            <a className="fa-brands fa-linkedin" />
-                        </li>
-                    </ul>
-                    <ul className="links">
-                            <Link to='/'>Home</Link>
-                            <Link to='/about'>About</Link>
-                            <Link to='/services'>Service</Link>
-                        {/* <li>
-                        </li>
-                        <li>
-                        </li>
-                        <li>
-                        </li> */}
-                    </ul>
+                    
+                    {/* <ul className="links">
+                            <Link className='black' to='/'>Home</Link>
+                            <Link className='black' to='/about'>About</Link>
+                            <Link className='black' to='/services'>Service</Link>
+                        
+                    </ul> */}
                     <p className="legal">© 2024 All rights reserved</p>
                 </section>
             </footer>

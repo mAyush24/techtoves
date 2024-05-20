@@ -4,7 +4,8 @@ import './dashboard.css'
 
 const ResourceCard = ({ resource }) => {
   return (
-    <div className="resource-card">
+    <div className="resource-cardd">
+      <img src={resource.img} alt="image" />
       <h3>{resource.name}</h3>
       <p>{resource.description}</p>
       <p><strong>Price:</strong> {resource.price}</p>

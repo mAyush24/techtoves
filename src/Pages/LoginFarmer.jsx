@@ -4,13 +4,13 @@ import './LoginFarmer.css'
 
 function LoginFarmer() {
     return (
-        <>
+        <div className='center'>
             <div className="login-containerlf">
                 <h2>Login </h2>
                 <form>
                     <input type="email" name="email" id="email" placeholder='Email' required='' />
                     <input type="password" placeholder="Password" required="" />
-                    <Link to='/dashboard'>Login</Link>
+                    <Link className='black' to='/dashboard'>Login</Link>
                 </form>
                 <div className="linkslf">
                     <a href="#">Forgot Password?</a>
@@ -19,7 +19,7 @@ function LoginFarmer() {
                     </p>
                 </div>
             </div>
-        </>
+        </div>
 
     )
 }

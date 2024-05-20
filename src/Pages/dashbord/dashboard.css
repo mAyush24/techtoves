@@ -1,6 +1,11 @@
-.dashboard {
-    width: 80%;
+.App {
+    text-align: center;
+}
+
+.dashboardd {
+    /* width: 80%; */
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -17,22 +22,36 @@ nav a {
 
 section {
     margin: 20px 0;
+    text-align: center;
 }
 
-.resources {
+.resourcesd {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.resource-card {
+.resource-cardd {
     border: 1px solid #ccc;
     padding: 20px;
     width: calc(33% - 40px);
     box-sizing: border-box;
 }
+.resource-cardd p{
+    color: black;
+}
+.resource-cardd img{
+    width: 15rem;
+}
 
-.farmer-details p {
+.farmer-detailsd{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.farmer-detailsd p {
     margin: 5px 0;
     color: black;
 }

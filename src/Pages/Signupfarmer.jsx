@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom'
 
 function Signupfarmer() {
     return (
-        <>
+        <div className='center'>
             <div className="containersf">
                 <h2 className="h2sf">
-                    <img src="logo.png" alt="Logo" className="logosf" /> Sign-up Farmer
+                    {/* <img src="src/assets/potato.jpeg" className="logosf" /> */}
+                    Sign-up as Farmer
                 </h2>
                 {/* <h2 class="h2">Sign-up Farmer</h2> */}
                 <div className="form-containersf">
@@ -46,12 +47,12 @@ function Signupfarmer() {
                             />
                         </div>
                         <button className='btnsf' type="submit">Submit</button>
-                        <Link to='/signup/buyer'>SignUp as a Buyer</Link>
+                        Company?: <Link className='sign' to='/signup/buyer'>SignUp as a Buyer</Link>
 
                     </form>
                 </div>
             </div>
-        </>
+        </div>
 
     )
 }
