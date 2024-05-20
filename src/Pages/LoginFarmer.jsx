@@ -10,7 +10,7 @@ function LoginFarmer() {
                 <form>
                     <input type="email" name="email" id="email" placeholder='Email' required='' />
                     <input type="password" placeholder="Password" required="" />
-                    <button type="submit">Login</button>
+                    <Link to='/dashboard'>Login</Link>
                 </form>
                 <div className="linkslf">
                     <a href="#">Forgot Password?</a>

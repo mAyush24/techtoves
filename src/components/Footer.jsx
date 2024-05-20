@@ -1,10 +1,12 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
+
 
 function footer() {
     return (
         <>
-            
+
             <footer className='footer'>
                 <div className="background">
                     <svg
@@ -82,15 +84,15 @@ s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.
                         </li>
                     </ul>
                     <ul className="links">
-                        <li>
-                            <a>Home</a>
+                            <Link to='/'>Home</Link>
+                            <Link to='/about'>About</Link>
+                            <Link to='/services'>Service</Link>
+                        {/* <li>
                         </li>
                         <li>
-                            <a>About</a>
                         </li>
                         <li>
-                            <a>Contact Us</a>
-                        </li>
+                        </li> */}
                     </ul>
                     <p className="legal">© 2024 All rights reserved</p>
                 </section>

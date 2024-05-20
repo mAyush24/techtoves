@@ -1,0 +1,38 @@
+.dashboard {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.resource-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+}
+
+.farmer-details p {
+    margin: 5px 0;
+    color: black;
+}
